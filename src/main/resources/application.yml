@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          default-label: main
+          uri: https://github.com/marc-dev0/test.config-repository.git
+      health:
+        enable: true
+server:
+  port: 8100
